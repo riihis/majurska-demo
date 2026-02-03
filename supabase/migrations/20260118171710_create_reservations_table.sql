@@ -55,6 +55,3 @@ CREATE POLICY "Authenticated users can update reservations"
   TO authenticated
   USING (true)
   WITH CHECK (true);
-if (!import.meta.env.VITE_SUPABASE_URL) {
-  console.warn("Supabase disabled in demo")
-}
