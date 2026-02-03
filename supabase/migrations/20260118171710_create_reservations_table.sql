@@ -22,9 +22,8 @@
     - This table stores customer reservations from the website
     - Public users can insert reservations
     - Only authenticated admin users can view/manage reservations
-*/
 
-CREATE TABLE IF NOT EXISTS reservations (
+* CREATE TABLE IF NOT EXISTS reservations (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   name text NOT NULL,
   email text NOT NULL,
